@@ -1,0 +1,20 @@
+<suite name="Parallel TestSuite" parallel="tests" thread-count="3">
+    <test name="Firefox Test">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="TestNG.MainClass"/>
+        </classes>
+    </test>
+    <test name="Chrome Test 1">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="TestNG.MainClass"/>
+        </classes>
+    </test>
+    <test name="MicrosoftEdge Test 2">
+        <parameter name="browser" value="MicrosoftEdge"/>
+        <classes>
+            <class name="TestNG.MainClass"/>
+        </classes>
+    </test>
+</suite>
